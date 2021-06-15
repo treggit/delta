@@ -251,7 +251,7 @@ lazy val unidocSettings = Seq(
 
   unidocAllSources in(JavaUnidoc, unidoc) := {
     ignoreUndocumentedPackages((unidocAllSources in(JavaUnidoc, unidoc)).value)
-  },
+  }
 
   // Ensure unidoc is run with tests
 //   (test in Test) := ((test in Test) dependsOn unidoc.in(Compile)).value
