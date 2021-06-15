@@ -19,7 +19,4 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Run tests
-      run: |
-        javadoc --version
-        javadoc --help
-        sbt test
+      run: sbt test
