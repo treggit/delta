@@ -245,7 +245,7 @@ lazy val unidocSettings = Seq(
     "-exclude", "org:com:io.delta.sql:io.delta.tables.execution",
     "-noqualifier", "java.lang",
     "-tag", "return:X",
-    // `doclint` is disabled on Circle CI. Need to enable it manually to test our javadoc.
+    `doclint` is disabled on Circle CI. Need to enable it manually to test our javadoc.
     "-Xdoclint:all"
   ),
 
@@ -254,7 +254,7 @@ lazy val unidocSettings = Seq(
   },
 
   // Ensure unidoc is run with tests
-  (test in Test) := ((test in Test) dependsOn unidoc.in(Compile)).value
+//   (test in Test) := ((test in Test) dependsOn unidoc.in(Compile)).value
 )
 
 /*
